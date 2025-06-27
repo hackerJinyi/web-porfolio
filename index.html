@@ -1,22 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jinyi's Project</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jinyi's Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+      padding: 0 20px 40px;
+    }
+
+    .projects a {
+      display: block;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    }
+
+    .projects a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Unique hover background colors */
+    .bomb:hover         { background-color: #ffe6e6; }
+    .wordsearch:hover   { background-color: #fff5cc; }
+    .memorygame:hover   { background-color: #f0e6ff; }
+    .tictactoe:hover    { background-color: #e6f9ff; }
+    .supertictactoe:hover { background-color: #e0ffe0; }
+    .pixelart:hover     { background-color: #fce6ff; }
+    .numberium:hover    { background-color: #fff0e6; }
+    .cardgame:hover     { background-color: #e6e6ff; }
+    .snake:hover        { background-color: #fdf0cc; }
+    .wordle:hover       { background-color: #e6f8f0; }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-	<h1>Jinyi's Project</h1>
-	<p>Enjoy some of the projects I made in my coding classes!</p>
-	<a href="Bomb/index.html">Bomb Dodger</a>
-	<a href="Word Search/index.html">Word Search</a>
-	<a href="memorygame/index.html">Memory game</a>
-	<a href="tic-tac-toe/index.html">Tic-Tac-Toe</a>
-	<a href="super tic-tac-toe/index.html">Super Tic-Tac-Toe</a>
-	<a href="pixel art/index.html">Pixel Art</a>
-	<a href="Numberium/index.html">Numberium</a>
-	<a href="Card game/index.html">Card game</a>
-	<a href="Snake/index.html">Snake game</a>
-	<a href="Wordle/index.html">Wordle</a>
+  <h1>Jinyi's Project</h1>
+  <p>Enjoy some of the projects I made in my coding classes!</p>
+
+  <div class="projects">
+    <a href="Bomb/index.html" class="bomb">Bomb Dodger</a>
+    <a href="Word%20Search/index.html" class="wordsearch">Word Search</a>
+    <a href="memorygame/index.html" class="memorygame">Memory Game</a>
+    <a href="tic-tac-toe/index.html" class="tictactoe">Tic-Tac-Toe</a>
+    <a href="super%20tic-tac-toe/index.html" class="supertictactoe">Super Tic-Tac-Toe</a>
+    <a href="pixel%20art/index.html" class="pixelart">Pixel Art</a>
+    <a href="Numberium/index.html" class="numberium">Numberium</a>
+    <a href="Card%20game/index.html" class="cardgame">Card Game</a>
+    <a href="Snake/index.html" class="snake">Snake Game</a>
+    <a href="Wordle/index.html" class="wordle">Wordle</a>
+  </div>
 </body>
 </html>
