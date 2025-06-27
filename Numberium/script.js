@@ -11,7 +11,7 @@ const s2 = new Audio('s2.mp3') // move
 const s3 = new Audio('s3.wav') // weird move
 // const lowBoingSound = new Audio('lowBoing.wav') // block move
 
-let currLevel = 15
+let currLevel = 1
 currLevelDisplay.textContent = currLevel
 let numLevels = levels.length - 1
 numLevelsDisplay.textContent = numLevels
