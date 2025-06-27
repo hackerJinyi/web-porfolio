@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kode+Mono:wght@400..700&family=Pixelify+Sans:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&family=Share+Tech+Mono&display=swap');
+
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	height: 100vh;
+	width: 100vw;
+}
+
+.currColorDisplay {
+	width: 30px;
+	height: 30px;
+	margin: 2px;
+}
+
+.leftCol {
+	padding: 10px;
+	overflow: hidden;
+	overflow-y: auto;
+/*	overflow-x: auto;*/
+}
+
+.rightCol {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.colorPicker {
+/*	display: none;*/
+}
+
+.colorBox {
+/*	width: 35px;*/
+	height: 35px;
+	margin: 2px;
+}
+
+.colorBoxes {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.pixel {
+	width: 25px;
+	height: 25px;
+/*	border: 1px solid #FAFAFA;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: #455A64;
+	margin: 1px;*/
+	transition: background-color 0.2s;
+	border: 0.1px solid #546E7A;
+}
+
+.canvas{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 20px;
+	background-color: #37474F;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #263238;
+}
+
+h1 {
+	color: #FAFAFA;
+	text-align: center;
+}
+
+.controls {
+	display: flex;
+	color: #FAFAFA;
+	width: 320px;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+p {
+	color: #FAFAFA;
+}

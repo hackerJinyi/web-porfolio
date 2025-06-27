@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kode+Mono:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+.box {
+	padding: 10px;
+	margin: 5px;
+	width: 60px;
+	height: 60px;
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+p {
+	border: 1px solid #CCCCCC;
+	margin: 20px;
+	padding: 20px;
+	background-color: #EEEEEE;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #EF5350;
+
+}
+
+.emoji {
+	transition: opacity 0.5s;
+}
+
+.box.closed .emoji {
+	opacity: 0;
+}
+
+.box.open .emoji {
+	opacity: 1;
+}
+
+.box.matched .emoji {
+	opacity: 1;
+}
+
+.box.matched {
+	background-color: yellow;
+	cursor: default;
+}
+
+.gameBoard {
+	width: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+* {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
